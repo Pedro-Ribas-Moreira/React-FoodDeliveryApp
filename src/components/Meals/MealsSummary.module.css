@@ -1,0 +1,40 @@
+.summary {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  /* width: 90%; */
+  /* margin-top: 10rem; */
+  /* position: relative; */
+  background-color: #383838;
+  color: white;
+  border-radius: 14px;
+  padding: 3rem;
+  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+  z-index: -100;
+  animation: display 6s ease-in-out;
+  opacity: 0;
+}
+
+.summary h2 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+@keyframes display {
+  0% {
+    opacity: 0;
+    z-index: 100;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 100;
+  }
+}
